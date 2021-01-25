@@ -6,4 +6,4 @@ Automação de casos de teste do site: http://practice.automationtesting.in/
 
 
 
-Cenários desenvolvido está na Issue: Levantamento de Cenários.
+Cenários desenvolvido está na Issue: [#1](../../issues/1) Levantamento de Cenários.
