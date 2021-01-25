@@ -12,22 +12,6 @@ public class TestingAutomationPageObject {
         this.driver = driver;
     }
 
-    public IElement usernameTextField(){
-        return new Element(this.driver, By.id("username"));
-    }
-    
-    public IElement myAccountLink(){
-        return new Element(this.driver, By.xpath("//*[@id='menu-item-50']/a)"));
-    }
-
-    public IElement passwordLoginTextField(){
-        return new Element(this.driver, By.id("password"));
-    }
-
-    public IElement loginButton(){
-        return new Element(this.driver, By.xpath("//*[@id='customer_login']/div[1]/form/p[3]/input[3]"));
-    }
-
     public IElement shopMenu(){
         return new Element(this.driver, By.id("menu-item-40"));
     }
@@ -56,4 +40,36 @@ public class TestingAutomationPageObject {
         return new Element(this.driver, By.xpath("//*[@id='page-34']/div/div[1]/div/div/h2"));
     }
 
+    public IElement usernameTextField(){
+        return new Element(this.driver, By.id("username"));
+    }
+    
+    public IElement myAccountLink(){
+        return new Element(this.driver, By.xpath("//*[@id='menu-item-50']/a"));
+    }
+
+    public IElement passwordLoginTextField(){
+        return new Element(this.driver, By.id("password"));
+    }
+
+    public IElement loginButton(){
+        return new Element(this.driver, By.xpath("//*[@id='customer_login']/div[1]/form/p[3]/input[3]"));
+    }
+
+    public IElement registerButton(){
+        return new Element(this.driver, By.xpath("//*[@id='customer_login']/div[2]/form/p[3]/input[3]"));
+    }
+
+    public IElement emailRegTextField(){
+        return new Element(this.driver, By.id("reg_email"));
+    }
+
+    public IElement passwordRegTextField(){
+        return new Element(this.driver, By.id("reg_password"));
+    }
+
+    
+    public IElement logoutButton(){
+        return new Element(this.driver, By.xpath("//*[@id='page-36']/div/div[1]/div/p[1]/a"));
+    }
 }
